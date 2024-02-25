@@ -1,0 +1,256 @@
+:root {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    color: rgb(34, 34, 34);
+
+    --border-color: rgb(185, 185, 185);
+    --boder: 1px solid var(--border-color);
+    --border-radius: 6px;
+    --table-border: rgb(225, 225, 225);
+    --caption-color: #3B5998;
+}
+
+html {
+    min-width: 800px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    position: relative;
+}
+
+header .languages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header .enter-or-register-box {
+    position: absolute;
+    top: calc(24px + 0.5rem);
+    right: 0;
+}
+
+header nav {
+    border: var(--boder);
+    border-radius: var(--border-radius);
+    margin: 0.5rem 0 2rem 0;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 1rem;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin-right: 1rem;
+}
+
+.middle {
+    display: flow-root;
+}
+
+aside {
+    float: right;
+    width: 20rem;
+}
+
+aside section {
+    border: var(--boder);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    word-break: break-word;
+}
+
+aside section .header {
+    border-bottom: var(--boder);
+    padding: 0.25rem;
+    font-weight: bold;
+    color: var(--caption-color);
+}
+
+aside section .header:before {
+    content: "→ ";
+    font-size: 1.1rem;
+}
+
+aside section .body {
+    padding: 0.25rem;
+}
+
+aside section .footer {
+    border-top: var(--boder);
+    padding: 0.25rem;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+aside section .footer a:after {
+    content: " →";
+}
+
+main {
+    margin-right: 21rem;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: var(--boder);
+    text-align: center;
+}
+
+div.user-box {
+    border: var(--boder);
+    border-radius: var(--border-radius);
+    padding: 0.3rem 0.7rem;
+}
+
+div.user-box h2 {
+    margin: 0.7rem;
+}
+
+.arrows a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: blue;
+}
+
+.arrows a.non-active {
+    pointer-events: none;
+    color: darkgrey;
+}
+
+header nav ul li a.current {
+    text-decoration: underline 0.25rem #3B5998;
+}
+
+
+main article .title a {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color:#3B5998;
+    text-decoration: none;
+}
+
+main article .information {
+    color: var(--annotation-color);
+    margin: 0.3rem 0 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+main article .body {
+    border-left: 5px solid var(--border-color);
+    padding-left: 1em;
+    word-break: break-word;
+}
+
+main article .attachment {
+    list-style-image: url('../img/paperclip-16x16.png');
+    font-size: 0.8rem;
+    margin: 0;
+    padding-left: 24px;
+    color: var(--annotation-color);
+}
+
+main article .footer {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    display: flow-root;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+main article .footer .left {
+    float: left;
+}
+
+main article .footer .right {
+    float: right;
+    font-size: 0.9rem;
+}
+
+main article .footer .right img {
+    margin-left: 0.5rem;
+}
+
+main article .footer img {
+    vertical-align: middle;
+}
+
+main article .footer .left .score {
+    font-weight: bold;
+    color: gray;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+main article .footer .left .score .positive {
+    color: green;
+}
+
+
+main .datatable .caption {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+main .datatable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+main .datatable table td,
+main .datatable table th,
+main .datatable .caption {
+    border: 1px solid var(--table-border);
+}
+
+main .datatable table td,
+main .datatable table th,
+main .datatable .caption {
+    padding: 0.3rem;
+}
+
+main .datatable table tbody tr:nth-child(2n-1) {
+    background-color:#f8f8f8;
+}
+
+main .datatable .caption {
+    background-color:var(--table-border);
+}
+
+main .datatable table td {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+a.user {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a.user.RED {
+    color: red;
+}
+
+a.user.BLUE {
+    color: blue;
+}
+
+a.user.GREEN {
+    color: green;
+}
